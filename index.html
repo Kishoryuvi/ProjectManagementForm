@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Project Management Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src='https://maxcdn.bootstrapadn.com/bootstrap/3.4.1/is/bootstrap.min.js'></script>
+    </head>
+    <body>
+        <div class= 'container'>
+            <div class="page-header text-center">
+                <h2>Project Management Form</h2>
+            </div>
+            <form id="empform" method="get">
+                <div class="form-group">
+                    <label>Project-ID </label>
+                    <input type='text' id='projid' class="form-control" onchange="getEmp()">
+                </div>
+                <div class="form-group">
+                    <label> Project-Name </label>
+                    <input type="text" id='projame' class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Assigned-To </label>
+                    <input type="text" id='assignedTo' class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Assignment-Date </label>
+                    <input type="text" id='assignedDate' class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Deadline </label>
+                    <input type='text' id='deadline' class="form-control">
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveData()" disabled>Save</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()" disabled>Change</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm()" disabled>Reset</button>
+                </div>
+            </form>
+        </div>
+        <script src='http://login2explore.com/jpdb/resources/jpdb-commons.js'></script>
+        <script src="index.js"></script>
+
+    </body>
+</html>
